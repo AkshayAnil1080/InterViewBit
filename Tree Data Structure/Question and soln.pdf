@@ -1,0 +1,13 @@
+1. inorderTraversal
+/// tow nested loop. 1.first push all the left ele in stack. 2.pop one by one store in al 3. move right;
+
+2. preorderTraversal
+/// preorder follows root, left, right. since its stack we are using we need to pish right first and then left
+
+3. postOrderTraverasl
+// idea
+ //1 puhs root in fir Stack
+ //2 loop while fir is not empty()
+        //1. pop a node from fir and move to second
+        //2. if popped node has children push into first
+ //3 pirnt contents of second stack.
