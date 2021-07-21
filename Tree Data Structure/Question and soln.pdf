@@ -5,9 +5,17 @@
 /// preorder follows root, left, right. since its stack we are using we need to pish right first and then left
 
 3. postOrderTraverasl
-// idea
  //1 puhs root in fir Stack
  //2 loop while fir is not empty()
         //1. pop a node from fir and move to second
         //2. if popped node has children push into first
  //3 pirnt contents of second stack.
+
+4. Kth Smallest Element In BSTree
+///  Do inorderTraversal , store in AL, return al.get(K-1)
+
+5. Right View Of Binary Tree
+///  Do level order and pop the items from q till the size of previous level and add the last node in AL.
+
+6. Reverse Level Order
+/// Do level order but store every ele in stacks, 2. pop all ele from stack and add to AL, return AL.
