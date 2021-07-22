@@ -19,3 +19,24 @@
 
 6. Reverse Level Order
 /// Do level order but store every ele in stacks, 2. pop all ele from stack and add to AL, return AL.
+
+7. ZigZag Level Order Traversal BT(Amazon)
+/// idea use two stack to store each level , in odd numbre of levels, one extra empty AL is added, So add only when AL is not empty
+public class Solution {
+
+8. Least Common Ancestor(Am, Fb, Go)
+/// Idea:lca + 2 base cond  1. null check 2. if  root equals to B or C return root
+//           + 2 rec one for left then right
+//           + 3 cases - 1. if(left and right both not null) return root
+//                      2. if(left!=null && right==null) return left
+//                      3. else ret right;
+
+9. Search in BT
+// 2 bc + search in left, then right
+
+10. Diagonal Traversal(Amazon) O(n)
+// Idea: Level Order - push root, print root, then push left node into q and update ptr to right of root.
+
+11. 2-Sum Binary Tree(Am)
+/// 1. given bst , Inorder on BST is sorted array
+    2. two ptr search in AL
