@@ -57,3 +57,12 @@ public class Solution {
 1. push (root,d) in q - if move left push(root.left,d-1) - if move right push(root.right,d+1);
 2. for each level - if (map.containsKey(d))  push that ele in AL , else make new AL and add in maxDepth
 3. print ele of treemap
+
+x15. Sum Root To Leaf Numbers(Go)
+/// idea:  recur left anf right  line 10 , -> first left part wil be complteted ,
+// if leaf reached return the processed value,  + ans from right tree;
+
+16. Path Sum(am)
+/// idea: since ans can be from rst or lst = > ret fun(root.left) || fun(root.right)
+  //now what we have do is calculate the left sum till it reaches leaf and see if equal to given sum
+  // starting the fun , add the curr root.val and // bc if root==leaf ret(curr_sum==givensum)
