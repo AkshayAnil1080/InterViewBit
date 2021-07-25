@@ -1,0 +1,4 @@
+1. Cycle In Directed Graph(Am)
+/// idea:
+1. find back edge , dfs and need to maintain a dfs rec Stack
+2 way : do top sort, when polling out from queue maintain count++;    at last if(count!=V) ret 1; // cycle exists

@@ -66,3 +66,15 @@ x15. Sum Root To Leaf Numbers(Go)
 /// idea: since ans can be from rst or lst = > ret fun(root.left) || fun(root.right)
   //now what we have do is calculate the left sum till it reaches leaf and see if equal to given sum
   // starting the fun , add the curr root.val and // bc if root==leaf ret(curr_sum==givensum)
+
+
+x17. Root To Leaf Paths With Sum(AM)(vvvgd)
+///  idea : need to maintain track of sum from root to curr node and ele through this path
+// bc. if null ||  leaf && curr_sum+A.val !=B return
+//   else if leaf && leaf && curr_sum+A.val ==B
+// {  4 steps - 1. add curr ele in AL 2
+// 2. ans.add(new AL<>(al1)
+// 3.  remove the currently added ele
+// 4 return // complete prev parent call
+
+ArrayList<Integer> ans = new ArrayList<>(//pass anything here , st,q, al) // will has the ele in same order irr of property st,q,al
