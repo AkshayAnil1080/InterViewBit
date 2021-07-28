@@ -5,3 +5,14 @@ Invert Binary tree
 Flatten Binary tree
  // idea : either do preorder and append ele in right in a  new tree
  // 2. observe the order is right left node , use rec stack and add those values in a new tree.
+
+ DAY 34-
+ 1. Distinct Numbers In Window(Am)
+ /// 1. put B ele in map and increase the count , print size
+     2. traverse in remaining array ,
+     first remove A[i-B] , check if count =0 ;remove A[i-B] from map, push A[i], print map size
+
+ 2. K Largest Elements(Am)
+ /// 1.maitain a min heap of size k, push k ele
+     // 2 traveerse in remaining array-> if(pq.peek() < A[i]) remove top ele and push A[i]
+     // print min heap
