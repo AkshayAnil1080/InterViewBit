@@ -7,3 +7,14 @@
 /// 1.maitain a min heap of size k, push k ele
     // 2 traveerse in remaining array-> if(pq.peek() < A[i]) remove top ele and push A[i]
     // print min heap
+
+3.  Merge K sorted Array
+
+4. Magician And Chocolates
+
+5. Profit Maximisation
+
+6. Maximum sum combinations
+/// 1. adding all ele in A+B[0] and pushing into queue
+  2. run loop c times - since want c times max sum Comb
+  3. poll once and check of size of array b is still remaining , then get the index of curr A, the next B and push to q
