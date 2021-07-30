@@ -1,0 +1,7 @@
+1. Permutations - https://www.interviewbit.com/problems/permutations/
+//// need to recur under a for loop
+// 1. pass a AL<AL<int>>res, A, Al<int>curr into fun
+// 2. add A[i] to curr , need to remove A[i] from and add next to curr.
+// but cannot change the original A, as havet to itr for i=0; i<A>size()l
+// Adup.remove(i);  // copy the original A in Adup and pass Adup to recur.
+// 3. After reccursion // emptying the same curr when return is reached via BC

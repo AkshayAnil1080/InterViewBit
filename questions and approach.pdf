@@ -29,3 +29,36 @@ DAY 36
 /// 1. adding all ele in A+B[0] and pushing into queue
   2. run loop c times - since want c times max sum Comb
   3. poll once and check of size of array b is still remaining , then get the index of curr A, the next B and push to q
+
+new:
+Sort ArrayList
+ Collections.sort(A, (a,b) -> b-a);
+Sort Queue which has Triplet data type(x,y,sum) based on sum
+ PriorityQueue<Triplet> pq = new PriorityQueue<>((a,b) -> b.sum - a.sum);
+
+
+ DAY 37
+ 1. Ways to form Max heap - https://www.interviewbit.com/problems/ways-to-form-max-heap/
+ /// //  to find number of max heap can be obtianed fron given number say if n=4; o/p is 3.
+ // we must know :
+ //   a. no of max ele ar level h = 2^h.
+ //   b. no. of ele before a particalur level h = 2^h -1;
+ //   c. heigh of max heap = logh (since its a complete binary tree)
+ //  Formula : t(n) = (n-1)C L *t(L)* t(R)    -- 1.
+ //
+ //   to find  nodes in left sub tree-
+ //   (number of nodes before leaf level(h) - 1(root)  )/2 + min( (2^h)/2 , Z )
+ //   = (2^h -1-1)/2 + min( (2^h)/2 , Z )   --2.
+
+ // => R = n-1-L   -- 3.
+ //  put 2 and 3 on 1.
+ // if last level is completely filled => no of nodes at last level 2^h/2
+ // else total nodes - nodes before level h : Z =  n-(2^h-1)
+
+ 2. Permutations - https://www.interviewbit.com/problems/permutations/
+ //// need to recur under a for loop
+ // 1. pass a AL<AL<int>>res, A, Al<int>curr into fun
+ // 2. add A[i] to curr , need to remove A[i] from and add next to curr.
+ // but cannot change the original A, as havet to itr for i=0; i<A>size()l
+ // Adup.remove(i);  // copy the original A in Adup and pass Adup to recur.
+ // 3. After reccursion // emptying the same curr when return is reached via BC

@@ -18,3 +18,20 @@
 /// 1. adding all ele in A+B[0] and pushing into queue
   2. run loop c times - since want c times max sum Comb
   3. poll once and check of size of array b is still remaining , then get the index of curr A, the next B and push to q
+
+7. Ways to form Max heap
+/// //  to find number of max heap can be obtianed fron given number say if n=4; o/p is 3.
+// we must know :
+//   a. no of max ele ar level h = 2^h.
+//   b. no. of ele before a particalur level h = 2^h -1;
+//   c. heigh of max heap = logh (since its a complete binary tree)
+//  Formula : t(n) = (n-1)C L *t(L)* t(R)    -- 1.
+//
+//   to find  nodes in left sub tree-
+//   (number of nodes before leaf level(h) - 1(root)  )/2 + min( (2^h)/2 , Z )
+//   = (2^h -1-1)/2 + min( (2^h)/2 , Z )   --2.
+
+// => R = n-1-L   -- 3.
+//  put 2 and 3 on 1.
+// if last level is completely filled => no of nodes at last level 2^h/2
+// else total nodes - nodes before level h : Z =  n-(2^h-1)
