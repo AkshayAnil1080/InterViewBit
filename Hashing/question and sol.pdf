@@ -1,0 +1,19 @@
+1. Check Palindrome!
+// Given a String. Check if characters of the given string can be rearranged to form a palindrome
+// idea: put all ele in HashMap<Character, Integer with its occurences.
+//1. if string length even - the values set in map must be even
+// 2. if string length is odd- only one value in values set should be odd.
+
+2. 2 SUM
+// 1. traverse in array - check if map.containsKey(target-A[i]) , if yes add the indexes to ans.
+// 2. tricky part is we cannot direclt put ele in map along with indexes,
+// suppose in case there is duplicacy u need to put the minimum index
+// So use, map.putIfAbsent(A[i],i+1);
+
+3.First Repeating Element
+
+4. Pairs With Given Xor LEVEL: MEDIUM , Tags: Flipkart
+// idea is based on this property A^B=C => C^A=B and C^B=A;
+1. we can just maintain a set and traverse in array,
+2. if set contains targer^A[i], increment the count, add ele in set
+3. after traversing return count
