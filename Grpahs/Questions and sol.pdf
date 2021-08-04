@@ -2,3 +2,11 @@
 /// idea:
 1. find back edge , dfs and need to maintain a dfs rec Stack
 2 way : do top sort, when polling out from queue maintain count++;    at last if(count!=V) ret 1; // cycle exists
+
+Water FLow
+///idea:
+run bfs twice, maintain two diff vis 2d array
+1. add the row and column close to red and blue lake
+2. run bfs for 1st row of blue (vis1) and 1st row of red lake(vis2)
+3. sim for remaining two
+4. check for all indexes where vis1 and vis2 have same value
